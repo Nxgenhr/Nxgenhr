@@ -1,0 +1,15 @@
+{
+  "name": "nxgenhr",
+  "private": true,
+  "packageManager": "pnpm@10.24.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "dev:web": "pnpm --filter @nxgenhr/web dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "deploy:web": "pnpm --filter @nxgenhr/web run deploy"
+  }
+}
